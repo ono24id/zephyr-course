@@ -1,0 +1,14 @@
+/*
+ * WeAct STM32 Black Pill documentation:
+ * https://github.com/WeActStudio/WeActStudio.STM32F4x1
+ *
+ * This overlay changes the board's led0 pin from PC13 to PB2.
+ */
+
+/ {
+    leds {
+        led {
+            gpios = <&gpiob 2 GPIO_ACTIVE_HIGH>;
+        };
+    };
+};
